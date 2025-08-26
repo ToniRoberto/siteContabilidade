@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITBCONTABIL - Soluções Contábeis Integradas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gold-gradient {
+            background: linear-gradient(135deg, #D4AF37 0%, #F9E076 100%);
+        }
+        .gold-text-gradient {
+            background: linear-gradient(135deg, #D4AF37 0%, #F9E076 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.03);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background: linear-gradient(135deg, #D4AF37 0%, #F9E076 100%);
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover:after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="font-sans bg-white text-gray-800">
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <span class="text-2xl font-bold mr-2">ITB<span class="gold-text-gradient">CONTABIL</span></span>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link font-medium">Início</a>
+                <a href="#services" class="nav-link font-medium">Serviços</a>
+                <a href="#about" class="nav-link font-medium">Sobre Nós</a>
+                <a href="#testimonials" class="nav-link font-medium">Depoimentos</a>
+                <a href="#contact" class="nav-link font-medium">Contato</a>
+            </nav>
+            
+            <div class="flex items-center space-x-4">
+                <a href="tel:+5511999999999" class="hidden md:flex items-center text-gray-700 hover:text-gray-900">
+                    <i class="fas fa-phone-alt mr-2 text-amber-600"></i>
+                    <span>(11) 99999-9999</span>
+                </a>
+                <a href="#contact" class="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800 transition duration-300">
+                    Fale Conosco
+                </a>
+                <button class="md:hidden text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-gray-50 py-20 md:py-32">
+        <div class="absolute inset-0 bg-black opacity-10"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                        <span class="block">Soluções Contábeis</span>
+                        <span class="gold-text-gradient">Completas e Personalizadas</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8 max-w-lg">
+                        Na ITBCONTABIL, transformamos números em estratégias para o crescimento do seu negócio. Conte com nossa expertise para otimizar sua gestão financeira e fiscal.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#contact" class="gold-gradient text-black font-bold px-8 py-3 rounded-md text-center hover:opacity-90 transition duration-300">
+                            Solicite uma Consultoria
+                        </a>
+                        <a href="#services" class="bg-white border-2 border-amber-600 text-amber-600 font-bold px-8 py-3 rounded-md text-center hover:bg-amber-50 transition duration-300">
+                            Nossos Serviços
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <img src="download.jpg" style="height: 550px;" 
+                             alt="Profissionais de contabilidade" 
+                             class="rounded-lg shadow-xl w-full max-w-lg border-4 border-white">
+                        <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-lg hidden md:block">
+                            <div class="flex items-center">
+                                <div class="bg-amber-100 p-3 rounded-full mr-3">
+                                    <i class="fas fa-chart-line text-amber-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-gray-800">+15 Anos</p>
+                                    <p class="text-sm text-gray-600">de experiência</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="py-8 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+                <div class="flex items-center">
+                    <i class="fas fa-shield-alt text-amber-600 text-3xl mr-3"></i>
+                    <span class="font-semibold">Segurança e Confiança</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-user-tie text-amber-600 text-3xl mr-3"></i>
+                    <span class="font-semibold">Profissionais Certificados</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-lock text-amber-600 text-3xl mr-3"></i>
+                    <span class="font-semibold">Dados Protegidos</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Nossos <span class="gold-text-gradient">Serviços</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Oferecemos soluções contábeis completas para empresas de todos os portes e segmentos.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-md transition duration-300 hover-scale">
+                    <div class="gold-gradient p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6">
+                        <i class="fas fa-file-invoice-dollar text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Contabilidade Completa</h3>
+                    <p class="text-gray-600 mb-4">
+                        Gestão contábil completa com escrituração fiscal, balanços, DREs e todos os relatórios necessários para sua empresa.
+                    </p>
+                    <a href="#" class="text-amber-600 font-medium flex items-center">
+                        Saiba mais <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-md transition duration-300 hover-scale">
+                    <div class="gold-gradient p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6">
+                        <i class="fas fa-search-dollar text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Planejamento Tributário</h3>
+                    <p class="text-gray-600 mb-4">
+                        Análise do regime tributário ideal para reduzir legalmente sua carga fiscal e aumentar a lucratividade.
+                    </p>
+                    <a href="#" class="text-amber-600 font-medium flex items-center">
+                        Saiba mais <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-md transition duration-300 hover-scale">
+                    <div class="gold-gradient p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6">
+                        <i class="fas fa-hand-holding-usd text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Departamento Fiscal</h3>
+                    <p class="text-gray-600 mb-4">
+                        Terceirização completa do departamento fiscal com emissão de notas, apuração de impostos e obrigações acessórias.
+                    </p>
+                    <a href="#" class="text-amber-600 font-medium flex items-center">
+                        Saiba mais <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-md transition duration-300 hover-scale">
+                    <div class="gold-gradient p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6">
+                        <i class="fas fa-user-tie text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Assessoria Trabalhista</h3>
+                    <p class="text-gray-600 mb-4">
+                        Cuidamos de toda a folha de pagamento, eSocial, férias, rescisões e demais obrigações trabalhistas.
+                    </p>
+                    <a href="#" class="text-amber-600 font-medium flex items-center">
+                        Saiba mais <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-md transition duration-300 hover-scale">
+                    <div class="gold-gradient p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-pie text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Consultoria Financeira</h3>
+                    <p class="text-gray-600 mb-4">
+                        Análise financeira estratégica para melhorar resultados, fluxo de caixa e tomada de decisões empresariais.
+                    </p>
+                    <a href="#" class="text-amber-600 font-medium flex items-center">
+                        Saiba mais <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-md transition duration-300 hover-scale">
+                    <div class="gold-gradient p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6">
+                        <i class="fas fa-building text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Abertura de Empresa</h3>
+                    <p class="text-gray-600 mb-4">
+                        Todo o processo de abertura com escolha do melhor enquadramento jurídico e tributário para seu negócio.
+                    </p>
+                    <a href="#" class="text-amber-600 font-medium flex items-center">
+                        Saiba mais <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#contact" class="gold-gradient text-black font-bold px-8 py-3 rounded-md inline-block hover:opacity-90 transition duration-300">
+                    Fale com um Especialista
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Sobre a <span class="gold-text-gradient">ITBCONTABIL</span></h2>
+                    <p class="text-gray-600 mb-6">
+                        Fundada em 2008, a ITBCONTABIL se consolidou como uma das principais empresas de contabilidade do país, com um time de especialistas dedicados a oferecer soluções personalizadas para cada cliente.
+                    </p>
+                    <p class="text-gray-600 mb-8">
+                        Nossa missão é simplificar a complexidade contábil e fiscal, permitindo que nossos clientes foquem no que realmente importa: o crescimento de seus negócios.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <div class="text-3xl font-bold gold-text-gradient mb-2">+500</div>
+                            <div class="text-gray-600">Clientes Ativos</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <div class="text-3xl font-bold gold-text-gradient mb-2">15+</div>
+                            <div class="text-gray-600">Anos no Mercado</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <div class="text-3xl font-bold gold-text-gradient mb-2">100%</div>
+                            <div class="text-gray-600">Satisfação dos Clientes</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <div class="text-3xl font-bold gold-text-gradient mb-2">24/7</div>
+                            <div class="text-gray-600">Suporte Especializado</div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="bg-black text-white px-6 py-3 rounded-md inline-block hover:bg-gray-800 transition duration-300">
+                        Conheça Nossa Equipe
+                    </a>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="relative">
+                        <img src="quemsomos.jpg" 
+                             alt="Equipe ITBCONTABIL" 
+                             class="rounded-lg shadow-xl w-full border-4 border-white">
+                        <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-lg hidden md:block">
+                            <div class="flex items-center">
+                                <div class="mr-4">
+                                    <div class="gold-gradient p-3 rounded-full">
+                                        <i class="fas fa-medal text-white text-xl"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-gray-800">Prêmio Excelência Contábil</p>
+                                    <p class="text-sm text-gray-600">5 anos consecutivos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-black text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Precisa de Ajuda com Sua Contabilidade?</h2>
+            <p class="text-gray-300 max-w-2xl mx-auto mb-8">
+                Nossos especialistas estão prontos para oferecer a melhor solução para o seu negócio. Entre em contato agora mesmo para uma consultoria gratuita.
+            </p>
+            <a href="#contact" class="gold-gradient text-black font-bold px-8 py-3 rounded-md inline-block hover:opacity-90 transition duration-300">
+                Agendar Consultoria
+            </a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">O Que Nossos <span class="gold-text-gradient">Clientes Dizem</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    A satisfação dos nossos clientes é o nosso maior orgulho. Confira alguns depoimentos.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-500 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">
+                        "A ITBCONTABIL transformou completamente nossa gestão financeira. Em 6 meses já conseguimos reduzir custos tributários em 22%. Recomendo a todos!"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gray-200 mr-4 overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Carlos Mendes</h4>
+                            <p class="text-sm text-gray-500">Diretor - Mendes & Cia</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-500 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">
+                        "Atendimento impecável! Nunca tive problemas com prazos ou qualidade das informações. A equipe é extremamente competente e prestativa."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gray-200 mr-4 overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Cliente" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Ana Paula Silva</h4>
+                            <p class="text-sm text-gray-500">CEO - APS Consultoria</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-500 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">
+                        "Migramos nossa contabilidade para a ITBCONTABIL há 3 anos e foi a melhor decisão. Suporte 24/7 e relatórios detalhados que nos ajudam a tomar melhores decisões."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gray-200 mr-4 overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Cliente" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Roberto Almeida</h4>
+                            <p class="text-sm text-gray-500">Sócio - Almeida Tech</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Entre em <span class="gold-text-gradient">Contato</span></h2>
+                    <p class="text-gray-600 mb-8">
+                        Estamos prontos para ajudar sua empresa a alcançar novos patamares. Preencha o formulário ou utilize nossos canais de atendimento.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="gold-gradient p-3 rounded-full mr-4 flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Endereço</h4>
+                                <p class="text-gray-600">Av. Paulista, 1000 - Sala 123<br>São Paulo - SP, 01310-100</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="gold-gradient p-3 rounded-full mr-4 flex-shrink-0">
+                                <i class="fas fa-phone-alt text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Telefone</h4>
+                                <p class="text-gray-600">(11) 99999-9999<br>Segunda a Sexta, 9h às 18h</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="gold-gradient p-3 rounded-full mr-4 flex-shrink-0">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">E-mail</h4>
+                                <p class="text-gray-600">contato@itbcontabil.com.br<br>Atendimento em 24h</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-bold text-lg mb-4">Siga-nos</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-gray-200 p-3 rounded-full text-gray-700 hover:bg-amber-100 hover:text-amber-600 transition duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="bg-gray-200 p-3 rounded-full text-gray-700 hover:bg-amber-100 hover:text-amber-600 transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="bg-gray-200 p-3 rounded-full text-gray-700 hover:bg-amber-100 hover:text-amber-600 transition duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="bg-gray-200 p-3 rounded-full text-gray-700 hover:bg-amber-100 hover:text-amber-600 transition duration-300">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <form class="bg-white p-8 rounded-lg shadow-md">
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Nome Completo</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent" required>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">E-mail</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent" required>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Telefone</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent" required>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="service" class="block text-gray-700 font-medium mb-2">Serviço de Interesse</label>
+                            <select id="service" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent">
+                                <option value="">Selecione um serviço</option>
+                                <option value="contabilidade">Contabilidade Completa</option>
+                                <option value="tributario">Planejamento Tributário</option>
+                                <option value="fiscal">Departamento Fiscal</option>
+                                <option value="trabalhista">Assessoria Trabalhista</option>
+                                <option value="financeira">Consultoria Financeira</option>
+                                <option value="abertura">Abertura de Empresa</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Mensagem</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full gold-gradient text-black font-bold py-3 px-4 rounded-md hover:opacity-90 transition duration-300">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">ITB<span class="gold-text-gradient">CONTABIL</span></h3>
+                    <p class="text-gray-400">
+                        Soluções contábeis integradas para empresas que buscam excelência e crescimento sustentável.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Serviços</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-amber-400 transition duration-300">Contabilidade Completa</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-400 transition duration-300">Planejamento Tributário</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-400 transition duration-300">Departamento Fiscal</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-400 transition duration-300">Assessoria Trabalhista</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Links Úteis</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-amber-400 transition duration-300">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-400 transition duration-300">Perguntas Frequentes</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-400 transition duration-300">Termos de Serviço</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-400 transition duration-300">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">
+                        Assine nossa newsletter para receber dicas e novidades sobre contabilidade.
+                    </p>
+                    <form class="flex">
+                        <input type="email" placeholder="Seu e-mail" class="px-4 py-2 rounded-l-md w-full text-gray-800 focus:outline-none">
+                        <button type="submit" class="gold-gradient text-black px-4 py-2 rounded-r-md font-medium">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">
+                    &copy; 2023 ITBCONTABIL. Todos os direitos reservados.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-amber-400 transition duration-300">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-amber-400 transition duration-300">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-amber-400 transition duration-300">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-amber-400 transition duration-300">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/5511999999999" class="bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition duration-300 flex items-center justify-center">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <script>
+        // Simple form submission handler
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Obrigado por entrar em contato! Nossa equipe retornará em breve.');
+            this.reset();
+        });
+
+        // Mobile menu toggle functionality
+        const mobileMenuButton = document.querySelector('.md\\:hidden');
+        const mobileMenu = document.querySelector('nav');
+
+        mobileMenuButton.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+            mobileMenu.classList.toggle('flex-col');
+            mobileMenu.classList.toggle('absolute');
+            mobileMenu.classList.toggle('top-16');
+            mobileMenu.classList.toggle('left-0');
+            mobileMenu.classList.toggle('right-0');
+            mobileMenu.classList.toggle('bg-white');
+            mobileMenu.classList.toggle('p-4');
+            mobileMenu.classList.toggle('shadow-md');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
